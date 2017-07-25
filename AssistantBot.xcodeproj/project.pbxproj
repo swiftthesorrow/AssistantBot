@@ -1,0 +1,1500 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BF0F5AA51F1D49A0006AE56C /* ServiceObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0F5AA41F1D49A0006AE56C /* ServiceObject.swift */; };
+		BF10AA011F23830B0086BB3A /* ValuesConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF10AA001F23830B0086BB3A /* ValuesConverter.swift */; };
+		BF10AA021F23830B0086BB3A /* ValuesConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF10AA001F23830B0086BB3A /* ValuesConverter.swift */; };
+		BF10AA041F2384DB0086BB3A /* StringFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF10AA031F2384DB0086BB3A /* StringFormatter.swift */; };
+		BF10AA051F2384DB0086BB3A /* StringFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF10AA031F2384DB0086BB3A /* StringFormatter.swift */; };
+		BF265F951F17FB0200418B66 /* NSObject+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF265F941F17FAF200418B66 /* NSObject+Extensions.swift */; };
+		BF265F991F17FCE100418B66 /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF265F981F17FCE100418B66 /* Command.swift */; };
+		BFE2F1ED1F16AADF00219213 /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2F1EC1F16AADF00219213 /* APIKeys.swift */; };
+		BFE2F1F01F16ACB200219213 /* BotFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2F1EF1F16ACB200219213 /* BotFactory.swift */; };
+		BFE2F1F21F16AD8A00219213 /* ServiceBot.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2F1F11F16AD8A00219213 /* ServiceBot.swift */; };
+		BFE2F1F51F16AE1500219213 /* WeatherBot.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2F1F41F16AE1500219213 /* WeatherBot.swift */; };
+		BFE2F1F71F16AE5E00219213 /* WeatherObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2F1F61F16AE5E00219213 /* WeatherObject.swift */; };
+		BFE2F1F91F16AF4900219213 /* AssisitantBot.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2F1F81F16AF4900219213 /* AssisitantBot.swift */; };
+		_LinkFileRef_SKClient_via_AssistantBot /* SKClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_SKClient" /* SKClient.framework */; };
+		_LinkFileRef_SKClient_via_SlackKit /* SKClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_SKClient" /* SKClient.framework */; };
+		_LinkFileRef_SKCore_via_AssistantBot /* SKCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_SKCore" /* SKCore.framework */; };
+		_LinkFileRef_SKCore_via_SKClient /* SKCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_SKCore" /* SKCore.framework */; };
+		_LinkFileRef_SKCore_via_SKRTMAPI /* SKCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_SKCore" /* SKCore.framework */; };
+		_LinkFileRef_SKCore_via_SKServer /* SKCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_SKCore" /* SKCore.framework */; };
+		_LinkFileRef_SKCore_via_SKWebAPI /* SKCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_SKCore" /* SKCore.framework */; };
+		_LinkFileRef_SKCore_via_SlackKit /* SKCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_SKCore" /* SKCore.framework */; };
+		_LinkFileRef_SKRTMAPI_via_AssistantBot /* SKRTMAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_SKRTMAPI" /* SKRTMAPI.framework */; };
+		_LinkFileRef_SKRTMAPI_via_SlackKit /* SKRTMAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_SKRTMAPI" /* SKRTMAPI.framework */; };
+		_LinkFileRef_SKServer_via_AssistantBot /* SKServer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_SKServer" /* SKServer.framework */; };
+		_LinkFileRef_SKServer_via_SlackKit /* SKServer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_SKServer" /* SKServer.framework */; };
+		_LinkFileRef_SKWebAPI_via_AssistantBot /* SKWebAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_SKWebAPI" /* SKWebAPI.framework */; };
+		_LinkFileRef_SKWebAPI_via_SKRTMAPI /* SKWebAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_SKWebAPI" /* SKWebAPI.framework */; };
+		_LinkFileRef_SKWebAPI_via_SKServer /* SKWebAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_SKWebAPI" /* SKWebAPI.framework */; };
+		_LinkFileRef_SKWebAPI_via_SlackKit /* SKWebAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_SKWebAPI" /* SKWebAPI.framework */; };
+		_LinkFileRef_SlackKit_via_AssistantBot /* SlackKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_SlackKit" /* SlackKit.framework */; };
+		_LinkFileRef_Starscream_via_AssistantBot /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Starscream" /* Starscream.framework */; };
+		_LinkFileRef_Starscream_via_SKRTMAPI /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Starscream" /* Starscream.framework */; };
+		_LinkFileRef_Starscream_via_SlackKit /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Starscream" /* Starscream.framework */; };
+		_LinkFileRef_Swifter_via_AssistantBot /* Swifter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Swifter" /* Swifter.framework */; };
+		_LinkFileRef_Swifter_via_SKServer /* Swifter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Swifter" /* Swifter.framework */; };
+		_LinkFileRef_Swifter_via_SlackKit /* Swifter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Swifter" /* Swifter.framework */; };
+		"__src_cc_ref_Packages/SKClient-4.0.0/Sources/Client.swift" /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/SKClient-4.0.0/Sources/Client.swift" /* Client.swift */; };
+		"__src_cc_ref_Packages/SKCore-4.0.0/Sources/Action.swift" /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/SKCore-4.0.0/Sources/Action.swift" /* Action.swift */; };
+		"__src_cc_ref_Packages/SKCore-4.0.0/Sources/Attachment.swift" /* Attachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/SKCore-4.0.0/Sources/Attachment.swift" /* Attachment.swift */; };
+		"__src_cc_ref_Packages/SKCore-4.0.0/Sources/AttachmentField.swift" /* AttachmentField.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/SKCore-4.0.0/Sources/AttachmentField.swift" /* AttachmentField.swift */; };
+		"__src_cc_ref_Packages/SKCore-4.0.0/Sources/Bot.swift" /* Bot.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/SKCore-4.0.0/Sources/Bot.swift" /* Bot.swift */; };
+		"__src_cc_ref_Packages/SKCore-4.0.0/Sources/Channel.swift" /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/SKCore-4.0.0/Sources/Channel.swift" /* Channel.swift */; };
+		"__src_cc_ref_Packages/SKCore-4.0.0/Sources/Comment.swift" /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/SKCore-4.0.0/Sources/Comment.swift" /* Comment.swift */; };
+		"__src_cc_ref_Packages/SKCore-4.0.0/Sources/CustomProfile.swift" /* CustomProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/SKCore-4.0.0/Sources/CustomProfile.swift" /* CustomProfile.swift */; };
+		"__src_cc_ref_Packages/SKCore-4.0.0/Sources/CustomProfileField.swift" /* CustomProfileField.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/SKCore-4.0.0/Sources/CustomProfileField.swift" /* CustomProfileField.swift */; };
+		"__src_cc_ref_Packages/SKCore-4.0.0/Sources/DoNotDisturbStatus.swift" /* DoNotDisturbStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/SKCore-4.0.0/Sources/DoNotDisturbStatus.swift" /* DoNotDisturbStatus.swift */; };
+		"__src_cc_ref_Packages/SKCore-4.0.0/Sources/Edited.swift" /* Edited.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/SKCore-4.0.0/Sources/Edited.swift" /* Edited.swift */; };
+		"__src_cc_ref_Packages/SKCore-4.0.0/Sources/Event.swift" /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/SKCore-4.0.0/Sources/Event.swift" /* Event.swift */; };
+		"__src_cc_ref_Packages/SKCore-4.0.0/Sources/Extensions.swift" /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/SKCore-4.0.0/Sources/Extensions.swift" /* Extensions.swift */; };
+		"__src_cc_ref_Packages/SKCore-4.0.0/Sources/File.swift" /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/SKCore-4.0.0/Sources/File.swift" /* File.swift */; };
+		"__src_cc_ref_Packages/SKCore-4.0.0/Sources/History.swift" /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/SKCore-4.0.0/Sources/History.swift" /* History.swift */; };
+		"__src_cc_ref_Packages/SKCore-4.0.0/Sources/Item.swift" /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/SKCore-4.0.0/Sources/Item.swift" /* Item.swift */; };
+		"__src_cc_ref_Packages/SKCore-4.0.0/Sources/Message.swift" /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/SKCore-4.0.0/Sources/Message.swift" /* Message.swift */; };
+		"__src_cc_ref_Packages/SKCore-4.0.0/Sources/OAuthConfig.swift" /* OAuthConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/SKCore-4.0.0/Sources/OAuthConfig.swift" /* OAuthConfig.swift */; };
+		"__src_cc_ref_Packages/SKCore-4.0.0/Sources/RTMOptions.swift" /* RTMOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/SKCore-4.0.0/Sources/RTMOptions.swift" /* RTMOptions.swift */; };
+		"__src_cc_ref_Packages/SKCore-4.0.0/Sources/Reaction.swift" /* Reaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/SKCore-4.0.0/Sources/Reaction.swift" /* Reaction.swift */; };
+		"__src_cc_ref_Packages/SKCore-4.0.0/Sources/Scope.swift" /* Scope.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/SKCore-4.0.0/Sources/Scope.swift" /* Scope.swift */; };
+		"__src_cc_ref_Packages/SKCore-4.0.0/Sources/SlackError.swift" /* SlackError.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/SKCore-4.0.0/Sources/SlackError.swift" /* SlackError.swift */; };
+		"__src_cc_ref_Packages/SKCore-4.0.0/Sources/Team.swift" /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/SKCore-4.0.0/Sources/Team.swift" /* Team.swift */; };
+		"__src_cc_ref_Packages/SKCore-4.0.0/Sources/TeamIcon.swift" /* TeamIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/SKCore-4.0.0/Sources/TeamIcon.swift" /* TeamIcon.swift */; };
+		"__src_cc_ref_Packages/SKCore-4.0.0/Sources/Topic.swift" /* Topic.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/SKCore-4.0.0/Sources/Topic.swift" /* Topic.swift */; };
+		"__src_cc_ref_Packages/SKCore-4.0.0/Sources/User.swift" /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/SKCore-4.0.0/Sources/User.swift" /* User.swift */; };
+		"__src_cc_ref_Packages/SKCore-4.0.0/Sources/UserGroup.swift" /* UserGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/SKCore-4.0.0/Sources/UserGroup.swift" /* UserGroup.swift */; };
+		"__src_cc_ref_Packages/SKRTMAPI-4.0.0/Sources/SKRTMAPI/Conformers/StarscreamRTM.swift" /* Conformers/StarscreamRTM.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/SKRTMAPI-4.0.0/Sources/SKRTMAPI/Conformers/StarscreamRTM.swift" /* Conformers/StarscreamRTM.swift */; };
+		"__src_cc_ref_Packages/SKRTMAPI-4.0.0/Sources/SKRTMAPI/Conformers/ZewoRTM.swift" /* Conformers/ZewoRTM.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/SKRTMAPI-4.0.0/Sources/SKRTMAPI/Conformers/ZewoRTM.swift" /* Conformers/ZewoRTM.swift */; };
+		"__src_cc_ref_Packages/SKRTMAPI-4.0.0/Sources/SKRTMAPI/SKRTMAPI.swift" /* SKRTMAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/SKRTMAPI-4.0.0/Sources/SKRTMAPI/SKRTMAPI.swift" /* SKRTMAPI.swift */; };
+		"__src_cc_ref_Packages/SKServer-4.0.0/Sources/SKServer/Conformers/SwifterServer.swift" /* Conformers/SwifterServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/SKServer-4.0.0/Sources/SKServer/Conformers/SwifterServer.swift" /* Conformers/SwifterServer.swift */; };
+		"__src_cc_ref_Packages/SKServer-4.0.0/Sources/SKServer/Middleware/MessageActionMiddleware.swift" /* Middleware/MessageActionMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/SKServer-4.0.0/Sources/SKServer/Middleware/MessageActionMiddleware.swift" /* Middleware/MessageActionMiddleware.swift */; };
+		"__src_cc_ref_Packages/SKServer-4.0.0/Sources/SKServer/Middleware/OAuthMiddleware.swift" /* Middleware/OAuthMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/SKServer-4.0.0/Sources/SKServer/Middleware/OAuthMiddleware.swift" /* Middleware/OAuthMiddleware.swift */; };
+		"__src_cc_ref_Packages/SKServer-4.0.0/Sources/SKServer/Middleware/RedirectMiddleware.swift" /* Middleware/RedirectMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/SKServer-4.0.0/Sources/SKServer/Middleware/RedirectMiddleware.swift" /* Middleware/RedirectMiddleware.swift */; };
+		"__src_cc_ref_Packages/SKServer-4.0.0/Sources/SKServer/Middleware/ResponseMiddleware.swift" /* Middleware/ResponseMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/SKServer-4.0.0/Sources/SKServer/Middleware/ResponseMiddleware.swift" /* Middleware/ResponseMiddleware.swift */; };
+		"__src_cc_ref_Packages/SKServer-4.0.0/Sources/SKServer/Model/AuthorizeResponse.swift" /* Model/AuthorizeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/SKServer-4.0.0/Sources/SKServer/Model/AuthorizeResponse.swift" /* Model/AuthorizeResponse.swift */; };
+		"__src_cc_ref_Packages/SKServer-4.0.0/Sources/SKServer/Model/IncomingWebhook.swift" /* Model/IncomingWebhook.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/SKServer-4.0.0/Sources/SKServer/Model/IncomingWebhook.swift" /* Model/IncomingWebhook.swift */; };
+		"__src_cc_ref_Packages/SKServer-4.0.0/Sources/SKServer/Model/MessageActionRequest.swift" /* Model/MessageActionRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/SKServer-4.0.0/Sources/SKServer/Model/MessageActionRequest.swift" /* Model/MessageActionRequest.swift */; };
+		"__src_cc_ref_Packages/SKServer-4.0.0/Sources/SKServer/Model/MessageActionRoute.swift" /* Model/MessageActionRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/SKServer-4.0.0/Sources/SKServer/Model/MessageActionRoute.swift" /* Model/MessageActionRoute.swift */; };
+		"__src_cc_ref_Packages/SKServer-4.0.0/Sources/SKServer/Model/OAuthResponse.swift" /* Model/OAuthResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/SKServer-4.0.0/Sources/SKServer/Model/OAuthResponse.swift" /* Model/OAuthResponse.swift */; };
+		"__src_cc_ref_Packages/SKServer-4.0.0/Sources/SKServer/Model/RequestRoute.swift" /* Model/RequestRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/SKServer-4.0.0/Sources/SKServer/Model/RequestRoute.swift" /* Model/RequestRoute.swift */; };
+		"__src_cc_ref_Packages/SKServer-4.0.0/Sources/SKServer/Model/SKResponse.swift" /* Model/SKResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/SKServer-4.0.0/Sources/SKServer/Model/SKResponse.swift" /* Model/SKResponse.swift */; };
+		"__src_cc_ref_Packages/SKServer-4.0.0/Sources/SKServer/Model/WebhookRequest.swift" /* Model/WebhookRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/SKServer-4.0.0/Sources/SKServer/Model/WebhookRequest.swift" /* Model/WebhookRequest.swift */; };
+		"__src_cc_ref_Packages/SKServer-4.0.0/Sources/SKServer/SKServer.swift" /* SKServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/SKServer-4.0.0/Sources/SKServer/SKServer.swift" /* SKServer.swift */; };
+		"__src_cc_ref_Packages/SKServer-4.0.0/Sources/SKServer/SlackKitResponder.swift" /* SlackKitResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/SKServer-4.0.0/Sources/SKServer/SlackKitResponder.swift" /* SlackKitResponder.swift */; };
+		"__src_cc_ref_Packages/SKServer-4.0.0/Sources/SKServer/Titan/Router/InitializerOverloads.swift" /* Titan/Router/InitializerOverloads.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/SKServer-4.0.0/Sources/SKServer/Titan/Router/InitializerOverloads.swift" /* Titan/Router/InitializerOverloads.swift */; };
+		"__src_cc_ref_Packages/SKServer-4.0.0/Sources/SKServer/Titan/Router/PathParameterSupport.swift" /* Titan/Router/PathParameterSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/SKServer-4.0.0/Sources/SKServer/Titan/Router/PathParameterSupport.swift" /* Titan/Router/PathParameterSupport.swift */; };
+		"__src_cc_ref_Packages/SKServer-4.0.0/Sources/SKServer/Titan/Router/TitanInstanceMethodsNoLabels.generated.swift" /* Titan/Router/TitanInstanceMethodsNoLabels.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/SKServer-4.0.0/Sources/SKServer/Titan/Router/TitanInstanceMethodsNoLabels.generated.swift" /* Titan/Router/TitanInstanceMethodsNoLabels.generated.swift */; };
+		"__src_cc_ref_Packages/SKServer-4.0.0/Sources/SKServer/Titan/Router/TitanInstanceRoutesByMethod.generated.swift" /* Titan/Router/TitanInstanceRoutesByMethod.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/SKServer-4.0.0/Sources/SKServer/Titan/Router/TitanInstanceRoutesByMethod.generated.swift" /* Titan/Router/TitanInstanceRoutesByMethod.generated.swift */; };
+		"__src_cc_ref_Packages/SKServer-4.0.0/Sources/SKServer/Titan/Router/TitanParameterizedRoutes.generated.swift" /* Titan/Router/TitanParameterizedRoutes.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/SKServer-4.0.0/Sources/SKServer/Titan/Router/TitanParameterizedRoutes.generated.swift" /* Titan/Router/TitanParameterizedRoutes.generated.swift */; };
+		"__src_cc_ref_Packages/SKServer-4.0.0/Sources/SKServer/Titan/Router/TitanRoutingExtension.swift" /* Titan/Router/TitanRoutingExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/SKServer-4.0.0/Sources/SKServer/Titan/Router/TitanRoutingExtension.swift" /* Titan/Router/TitanRoutingExtension.swift */; };
+		"__src_cc_ref_Packages/SKServer-4.0.0/Sources/SKServer/Titan/TitanCORS.swift" /* Titan/TitanCORS.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/SKServer-4.0.0/Sources/SKServer/Titan/TitanCORS.swift" /* Titan/TitanCORS.swift */; };
+		"__src_cc_ref_Packages/SKServer-4.0.0/Sources/SKServer/Titan/TitanCore.swift" /* Titan/TitanCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/SKServer-4.0.0/Sources/SKServer/Titan/TitanCore.swift" /* Titan/TitanCore.swift */; };
+		"__src_cc_ref_Packages/SKServer-4.0.0/Sources/SKServer/Titan/TitanErrorHandling.swift" /* Titan/TitanErrorHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/SKServer-4.0.0/Sources/SKServer/Titan/TitanErrorHandling.swift" /* Titan/TitanErrorHandling.swift */; };
+		"__src_cc_ref_Packages/SKServer-4.0.0/Sources/SKServer/Titan/TitanFormURLEncodedBodyParser.swift" /* Titan/TitanFormURLEncodedBodyParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/SKServer-4.0.0/Sources/SKServer/Titan/TitanFormURLEncodedBodyParser.swift" /* Titan/TitanFormURLEncodedBodyParser.swift */; };
+		"__src_cc_ref_Packages/SKServer-4.0.0/Sources/SKServer/Titan/TitanJSONRequestBody.swift" /* Titan/TitanJSONRequestBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/SKServer-4.0.0/Sources/SKServer/Titan/TitanJSONRequestBody.swift" /* Titan/TitanJSONRequestBody.swift */; };
+		"__src_cc_ref_Packages/SKServer-4.0.0/Sources/SKServer/Titan/TitanQueryString.swift" /* Titan/TitanQueryString.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/SKServer-4.0.0/Sources/SKServer/Titan/TitanQueryString.swift" /* Titan/TitanQueryString.swift */; };
+		"__src_cc_ref_Packages/SKWebAPI-4.0.0/Sources/NetworkInterface.swift" /* NetworkInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/SKWebAPI-4.0.0/Sources/NetworkInterface.swift" /* NetworkInterface.swift */; };
+		"__src_cc_ref_Packages/SKWebAPI-4.0.0/Sources/WebAPI.swift" /* WebAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/SKWebAPI-4.0.0/Sources/WebAPI.swift" /* WebAPI.swift */; };
+		"__src_cc_ref_Packages/SlackKit-4.0.0/Sources/SlackKit.swift" /* SlackKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/SlackKit-4.0.0/Sources/SlackKit.swift" /* SlackKit.swift */; };
+		"__src_cc_ref_Packages/Starscream-2.1.0/Source/Compression.swift" /* Compression.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Starscream-2.1.0/Source/Compression.swift" /* Compression.swift */; };
+		"__src_cc_ref_Packages/Starscream-2.1.0/Source/SSLSecurity.swift" /* SSLSecurity.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Starscream-2.1.0/Source/SSLSecurity.swift" /* SSLSecurity.swift */; };
+		"__src_cc_ref_Packages/Starscream-2.1.0/Source/WebSocket.swift" /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Starscream-2.1.0/Source/WebSocket.swift" /* WebSocket.swift */; };
+		"__src_cc_ref_Packages/Swifter-1.3.3/Sources/DemoServer.swift" /* DemoServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Swifter-1.3.3/Sources/DemoServer.swift" /* DemoServer.swift */; };
+		"__src_cc_ref_Packages/Swifter-1.3.3/Sources/Errno.swift" /* Errno.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Swifter-1.3.3/Sources/Errno.swift" /* Errno.swift */; };
+		"__src_cc_ref_Packages/Swifter-1.3.3/Sources/Files.swift" /* Files.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Swifter-1.3.3/Sources/Files.swift" /* Files.swift */; };
+		"__src_cc_ref_Packages/Swifter-1.3.3/Sources/HttpParser.swift" /* HttpParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Swifter-1.3.3/Sources/HttpParser.swift" /* HttpParser.swift */; };
+		"__src_cc_ref_Packages/Swifter-1.3.3/Sources/HttpRequest.swift" /* HttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Swifter-1.3.3/Sources/HttpRequest.swift" /* HttpRequest.swift */; };
+		"__src_cc_ref_Packages/Swifter-1.3.3/Sources/HttpResponse.swift" /* HttpResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Swifter-1.3.3/Sources/HttpResponse.swift" /* HttpResponse.swift */; };
+		"__src_cc_ref_Packages/Swifter-1.3.3/Sources/HttpRouter.swift" /* HttpRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Swifter-1.3.3/Sources/HttpRouter.swift" /* HttpRouter.swift */; };
+		"__src_cc_ref_Packages/Swifter-1.3.3/Sources/HttpServer.swift" /* HttpServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Swifter-1.3.3/Sources/HttpServer.swift" /* HttpServer.swift */; };
+		"__src_cc_ref_Packages/Swifter-1.3.3/Sources/HttpServerIO.swift" /* HttpServerIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Swifter-1.3.3/Sources/HttpServerIO.swift" /* HttpServerIO.swift */; };
+		"__src_cc_ref_Packages/Swifter-1.3.3/Sources/Process.swift" /* Process.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Swifter-1.3.3/Sources/Process.swift" /* Process.swift */; };
+		"__src_cc_ref_Packages/Swifter-1.3.3/Sources/Scopes.swift" /* Scopes.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Swifter-1.3.3/Sources/Scopes.swift" /* Scopes.swift */; };
+		"__src_cc_ref_Packages/Swifter-1.3.3/Sources/Socket+File.swift" /* Socket+File.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Swifter-1.3.3/Sources/Socket+File.swift" /* Socket+File.swift */; };
+		"__src_cc_ref_Packages/Swifter-1.3.3/Sources/Socket+Server.swift" /* Socket+Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Swifter-1.3.3/Sources/Socket+Server.swift" /* Socket+Server.swift */; };
+		"__src_cc_ref_Packages/Swifter-1.3.3/Sources/Socket.swift" /* Socket.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Swifter-1.3.3/Sources/Socket.swift" /* Socket.swift */; };
+		"__src_cc_ref_Packages/Swifter-1.3.3/Sources/String+BASE64.swift" /* String+BASE64.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Swifter-1.3.3/Sources/String+BASE64.swift" /* String+BASE64.swift */; };
+		"__src_cc_ref_Packages/Swifter-1.3.3/Sources/String+File.swift" /* String+File.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Swifter-1.3.3/Sources/String+File.swift" /* String+File.swift */; };
+		"__src_cc_ref_Packages/Swifter-1.3.3/Sources/String+Misc.swift" /* String+Misc.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Swifter-1.3.3/Sources/String+Misc.swift" /* String+Misc.swift */; };
+		"__src_cc_ref_Packages/Swifter-1.3.3/Sources/String+SHA1.swift" /* String+SHA1.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Swifter-1.3.3/Sources/String+SHA1.swift" /* String+SHA1.swift */; };
+		"__src_cc_ref_Packages/Swifter-1.3.3/Sources/WebSockets.swift" /* WebSockets.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Swifter-1.3.3/Sources/WebSockets.swift" /* WebSockets.swift */; };
+		__src_cc_ref_Sources/main.swift /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Sources/main.swift /* main.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BFE2F1E31F16A9F700219213 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = __RootObject_ /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "______Target_SKCore";
+			remoteInfo = SKCore;
+		};
+		BFE2F1E41F16A9F700219213 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = __RootObject_ /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "______Target_SKWebAPI";
+			remoteInfo = SKWebAPI;
+		};
+		BFE2F1E51F16A9F700219213 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = __RootObject_ /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "______Target_Starscream";
+			remoteInfo = Starscream;
+		};
+		BFE2F1E61F16A9F700219213 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = __RootObject_ /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "______Target_Swifter";
+			remoteInfo = Swifter;
+		};
+		BFE2F1E71F16A9F700219213 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = __RootObject_ /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "______Target_SKClient";
+			remoteInfo = SKClient;
+		};
+		BFE2F1E81F16A9F700219213 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = __RootObject_ /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "______Target_SKRTMAPI";
+			remoteInfo = SKRTMAPI;
+		};
+		BFE2F1E91F16A9F700219213 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = __RootObject_ /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "______Target_SKServer";
+			remoteInfo = SKServer;
+		};
+		BFE2F1EA1F16A9F700219213 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = __RootObject_ /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "______Target_SlackKit";
+			remoteInfo = SlackKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BF0F5AA41F1D49A0006AE56C /* ServiceObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceObject.swift; sourceTree = "<group>"; };
+		BF10AA001F23830B0086BB3A /* ValuesConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValuesConverter.swift; sourceTree = "<group>"; };
+		BF10AA031F2384DB0086BB3A /* StringFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringFormatter.swift; sourceTree = "<group>"; };
+		BF265F941F17FAF200418B66 /* NSObject+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Extensions.swift"; sourceTree = "<group>"; };
+		BF265F981F17FCE100418B66 /* Command.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
+		BFE2F1EC1F16AADF00219213 /* APIKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIKeys.swift; sourceTree = "<group>"; };
+		BFE2F1EF1F16ACB200219213 /* BotFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BotFactory.swift; sourceTree = "<group>"; };
+		BFE2F1F11F16AD8A00219213 /* ServiceBot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceBot.swift; sourceTree = "<group>"; };
+		BFE2F1F41F16AE1500219213 /* WeatherBot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherBot.swift; sourceTree = "<group>"; };
+		BFE2F1F61F16AE5E00219213 /* WeatherObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherObject.swift; sourceTree = "<group>"; };
+		BFE2F1F81F16AF4900219213 /* AssisitantBot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssisitantBot.swift; sourceTree = "<group>"; };
+		__PBXFileRef_AssistantBot.xcodeproj/Configs/Project.xcconfig /* AssistantBot.xcodeproj/Configs/Project.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = AssistantBot.xcodeproj/Configs/Project.xcconfig; sourceTree = "<group>"; };
+		__PBXFileRef_Package.swift /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/SKClient-4.0.0/Sources/Client.swift" /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/SKCore-4.0.0/Sources/Action.swift" /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/SKCore-4.0.0/Sources/Attachment.swift" /* Attachment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Attachment.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/SKCore-4.0.0/Sources/AttachmentField.swift" /* AttachmentField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttachmentField.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/SKCore-4.0.0/Sources/Bot.swift" /* Bot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bot.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/SKCore-4.0.0/Sources/Channel.swift" /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/SKCore-4.0.0/Sources/Comment.swift" /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/SKCore-4.0.0/Sources/CustomProfile.swift" /* CustomProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomProfile.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/SKCore-4.0.0/Sources/CustomProfileField.swift" /* CustomProfileField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomProfileField.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/SKCore-4.0.0/Sources/DoNotDisturbStatus.swift" /* DoNotDisturbStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoNotDisturbStatus.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/SKCore-4.0.0/Sources/Edited.swift" /* Edited.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Edited.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/SKCore-4.0.0/Sources/Event.swift" /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/SKCore-4.0.0/Sources/Extensions.swift" /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/SKCore-4.0.0/Sources/File.swift" /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/SKCore-4.0.0/Sources/History.swift" /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/SKCore-4.0.0/Sources/Item.swift" /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/SKCore-4.0.0/Sources/Message.swift" /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/SKCore-4.0.0/Sources/OAuthConfig.swift" /* OAuthConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthConfig.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/SKCore-4.0.0/Sources/RTMOptions.swift" /* RTMOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RTMOptions.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/SKCore-4.0.0/Sources/Reaction.swift" /* Reaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reaction.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/SKCore-4.0.0/Sources/Scope.swift" /* Scope.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scope.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/SKCore-4.0.0/Sources/SlackError.swift" /* SlackError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlackError.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/SKCore-4.0.0/Sources/Team.swift" /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/SKCore-4.0.0/Sources/TeamIcon.swift" /* TeamIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamIcon.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/SKCore-4.0.0/Sources/Topic.swift" /* Topic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Topic.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/SKCore-4.0.0/Sources/User.swift" /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/SKCore-4.0.0/Sources/UserGroup.swift" /* UserGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserGroup.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/SKRTMAPI-4.0.0/Sources/SKRTMAPI/Conformers/StarscreamRTM.swift" /* Conformers/StarscreamRTM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conformers/StarscreamRTM.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/SKRTMAPI-4.0.0/Sources/SKRTMAPI/Conformers/ZewoRTM.swift" /* Conformers/ZewoRTM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conformers/ZewoRTM.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/SKRTMAPI-4.0.0/Sources/SKRTMAPI/SKRTMAPI.swift" /* SKRTMAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKRTMAPI.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/SKServer-4.0.0/Sources/SKServer/Conformers/SwifterServer.swift" /* Conformers/SwifterServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conformers/SwifterServer.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/SKServer-4.0.0/Sources/SKServer/Middleware/MessageActionMiddleware.swift" /* Middleware/MessageActionMiddleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Middleware/MessageActionMiddleware.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/SKServer-4.0.0/Sources/SKServer/Middleware/OAuthMiddleware.swift" /* Middleware/OAuthMiddleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Middleware/OAuthMiddleware.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/SKServer-4.0.0/Sources/SKServer/Middleware/RedirectMiddleware.swift" /* Middleware/RedirectMiddleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Middleware/RedirectMiddleware.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/SKServer-4.0.0/Sources/SKServer/Middleware/ResponseMiddleware.swift" /* Middleware/ResponseMiddleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Middleware/ResponseMiddleware.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/SKServer-4.0.0/Sources/SKServer/Model/AuthorizeResponse.swift" /* Model/AuthorizeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model/AuthorizeResponse.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/SKServer-4.0.0/Sources/SKServer/Model/IncomingWebhook.swift" /* Model/IncomingWebhook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model/IncomingWebhook.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/SKServer-4.0.0/Sources/SKServer/Model/MessageActionRequest.swift" /* Model/MessageActionRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model/MessageActionRequest.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/SKServer-4.0.0/Sources/SKServer/Model/MessageActionRoute.swift" /* Model/MessageActionRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model/MessageActionRoute.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/SKServer-4.0.0/Sources/SKServer/Model/OAuthResponse.swift" /* Model/OAuthResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model/OAuthResponse.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/SKServer-4.0.0/Sources/SKServer/Model/RequestRoute.swift" /* Model/RequestRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model/RequestRoute.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/SKServer-4.0.0/Sources/SKServer/Model/SKResponse.swift" /* Model/SKResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model/SKResponse.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/SKServer-4.0.0/Sources/SKServer/Model/WebhookRequest.swift" /* Model/WebhookRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model/WebhookRequest.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/SKServer-4.0.0/Sources/SKServer/SKServer.swift" /* SKServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKServer.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/SKServer-4.0.0/Sources/SKServer/SlackKitResponder.swift" /* SlackKitResponder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlackKitResponder.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/SKServer-4.0.0/Sources/SKServer/Titan/Router/InitializerOverloads.swift" /* Titan/Router/InitializerOverloads.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Titan/Router/InitializerOverloads.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/SKServer-4.0.0/Sources/SKServer/Titan/Router/PathParameterSupport.swift" /* Titan/Router/PathParameterSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Titan/Router/PathParameterSupport.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/SKServer-4.0.0/Sources/SKServer/Titan/Router/TitanInstanceMethodsNoLabels.generated.swift" /* Titan/Router/TitanInstanceMethodsNoLabels.generated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Titan/Router/TitanInstanceMethodsNoLabels.generated.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/SKServer-4.0.0/Sources/SKServer/Titan/Router/TitanInstanceRoutesByMethod.generated.swift" /* Titan/Router/TitanInstanceRoutesByMethod.generated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Titan/Router/TitanInstanceRoutesByMethod.generated.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/SKServer-4.0.0/Sources/SKServer/Titan/Router/TitanParameterizedRoutes.generated.swift" /* Titan/Router/TitanParameterizedRoutes.generated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Titan/Router/TitanParameterizedRoutes.generated.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/SKServer-4.0.0/Sources/SKServer/Titan/Router/TitanRoutingExtension.swift" /* Titan/Router/TitanRoutingExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Titan/Router/TitanRoutingExtension.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/SKServer-4.0.0/Sources/SKServer/Titan/TitanCORS.swift" /* Titan/TitanCORS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Titan/TitanCORS.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/SKServer-4.0.0/Sources/SKServer/Titan/TitanCore.swift" /* Titan/TitanCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Titan/TitanCore.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/SKServer-4.0.0/Sources/SKServer/Titan/TitanErrorHandling.swift" /* Titan/TitanErrorHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Titan/TitanErrorHandling.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/SKServer-4.0.0/Sources/SKServer/Titan/TitanFormURLEncodedBodyParser.swift" /* Titan/TitanFormURLEncodedBodyParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Titan/TitanFormURLEncodedBodyParser.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/SKServer-4.0.0/Sources/SKServer/Titan/TitanJSONRequestBody.swift" /* Titan/TitanJSONRequestBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Titan/TitanJSONRequestBody.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/SKServer-4.0.0/Sources/SKServer/Titan/TitanQueryString.swift" /* Titan/TitanQueryString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Titan/TitanQueryString.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/SKWebAPI-4.0.0/Sources/NetworkInterface.swift" /* NetworkInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkInterface.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/SKWebAPI-4.0.0/Sources/WebAPI.swift" /* WebAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebAPI.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/SlackKit-4.0.0/Sources/SlackKit.swift" /* SlackKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlackKit.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Starscream-2.1.0/Source/Compression.swift" /* Compression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Compression.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Starscream-2.1.0/Source/SSLSecurity.swift" /* SSLSecurity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSLSecurity.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Starscream-2.1.0/Source/WebSocket.swift" /* WebSocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocket.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Swifter-1.3.3/Sources/DemoServer.swift" /* DemoServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoServer.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Swifter-1.3.3/Sources/Errno.swift" /* Errno.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errno.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Swifter-1.3.3/Sources/Files.swift" /* Files.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Files.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Swifter-1.3.3/Sources/HttpParser.swift" /* HttpParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpParser.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Swifter-1.3.3/Sources/HttpRequest.swift" /* HttpRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRequest.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Swifter-1.3.3/Sources/HttpResponse.swift" /* HttpResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpResponse.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Swifter-1.3.3/Sources/HttpRouter.swift" /* HttpRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRouter.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Swifter-1.3.3/Sources/HttpServer.swift" /* HttpServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpServer.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Swifter-1.3.3/Sources/HttpServerIO.swift" /* HttpServerIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpServerIO.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Swifter-1.3.3/Sources/Process.swift" /* Process.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Process.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Swifter-1.3.3/Sources/Scopes.swift" /* Scopes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scopes.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Swifter-1.3.3/Sources/Socket+File.swift" /* Socket+File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Socket+File.swift"; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Swifter-1.3.3/Sources/Socket+Server.swift" /* Socket+Server.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Socket+Server.swift"; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Swifter-1.3.3/Sources/Socket.swift" /* Socket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Socket.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Swifter-1.3.3/Sources/String+BASE64.swift" /* String+BASE64.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+BASE64.swift"; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Swifter-1.3.3/Sources/String+File.swift" /* String+File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+File.swift"; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Swifter-1.3.3/Sources/String+Misc.swift" /* String+Misc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Misc.swift"; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Swifter-1.3.3/Sources/String+SHA1.swift" /* String+SHA1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+SHA1.swift"; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Swifter-1.3.3/Sources/WebSockets.swift" /* WebSockets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSockets.swift; sourceTree = "<group>"; };
+		__PBXFileRef_Sources/main.swift /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		__PBXFileRef_Tests /* Tests */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Tests; path = ../Tests; sourceTree = "<group>"; };
+		"_____Product_AssistantBot" /* AssistantBot */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = AssistantBot; sourceTree = BUILT_PRODUCTS_DIR; };
+		"_____Product_SKClient" /* SKClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SKClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"_____Product_SKCore" /* SKCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SKCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"_____Product_SKRTMAPI" /* SKRTMAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SKRTMAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"_____Product_SKServer" /* SKServer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SKServer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"_____Product_SKWebAPI" /* SKWebAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SKWebAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"_____Product_SlackKit" /* SlackKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SlackKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"_____Product_Starscream" /* Starscream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Starscream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"_____Product_Swifter" /* Swifter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Swifter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		"___LinkPhase_AssistantBot" /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				_LinkFileRef_SKCore_via_AssistantBot /* SKCore.framework in Frameworks */,
+				_LinkFileRef_SKClient_via_AssistantBot /* SKClient.framework in Frameworks */,
+				_LinkFileRef_SKWebAPI_via_AssistantBot /* SKWebAPI.framework in Frameworks */,
+				_LinkFileRef_Starscream_via_AssistantBot /* Starscream.framework in Frameworks */,
+				_LinkFileRef_SKRTMAPI_via_AssistantBot /* SKRTMAPI.framework in Frameworks */,
+				_LinkFileRef_Swifter_via_AssistantBot /* Swifter.framework in Frameworks */,
+				_LinkFileRef_SKServer_via_AssistantBot /* SKServer.framework in Frameworks */,
+				_LinkFileRef_SlackKit_via_AssistantBot /* SlackKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		"___LinkPhase_SKClient" /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				_LinkFileRef_SKCore_via_SKClient /* SKCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		"___LinkPhase_SKCore" /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		"___LinkPhase_SKRTMAPI" /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				_LinkFileRef_SKCore_via_SKRTMAPI /* SKCore.framework in Frameworks */,
+				_LinkFileRef_SKWebAPI_via_SKRTMAPI /* SKWebAPI.framework in Frameworks */,
+				_LinkFileRef_Starscream_via_SKRTMAPI /* Starscream.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		"___LinkPhase_SKServer" /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				_LinkFileRef_SKCore_via_SKServer /* SKCore.framework in Frameworks */,
+				_LinkFileRef_SKWebAPI_via_SKServer /* SKWebAPI.framework in Frameworks */,
+				_LinkFileRef_Swifter_via_SKServer /* Swifter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		"___LinkPhase_SKWebAPI" /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				_LinkFileRef_SKCore_via_SKWebAPI /* SKCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		"___LinkPhase_SlackKit" /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				_LinkFileRef_SKCore_via_SlackKit /* SKCore.framework in Frameworks */,
+				_LinkFileRef_SKClient_via_SlackKit /* SKClient.framework in Frameworks */,
+				_LinkFileRef_SKWebAPI_via_SlackKit /* SKWebAPI.framework in Frameworks */,
+				_LinkFileRef_Starscream_via_SlackKit /* Starscream.framework in Frameworks */,
+				_LinkFileRef_SKRTMAPI_via_SlackKit /* SKRTMAPI.framework in Frameworks */,
+				_LinkFileRef_Swifter_via_SlackKit /* Swifter.framework in Frameworks */,
+				_LinkFileRef_SKServer_via_SlackKit /* SKServer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		"___LinkPhase_Starscream" /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		"___LinkPhase_Swifter" /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BF0F5A9F1F19432E006AE56C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				BF10AA001F23830B0086BB3A /* ValuesConverter.swift */,
+				BF10AA031F2384DB0086BB3A /* StringFormatter.swift */,
+			);
+			name = Helpers;
+			path = Sources/Helpers;
+			sourceTree = "<group>";
+		};
+		BF265F931F17FAB200418B66 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BF265F941F17FAF200418B66 /* NSObject+Extensions.swift */,
+			);
+			name = Extensions;
+			path = Sources/Extensions;
+			sourceTree = "<group>";
+		};
+		BFE2F1EB1F16AAC800219213 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				BFE2F1EC1F16AADF00219213 /* APIKeys.swift */,
+				BF265F981F17FCE100418B66 /* Command.swift */,
+			);
+			name = Constants;
+			path = Sources/Constants;
+			sourceTree = "<group>";
+		};
+		BFE2F1EE1F16AC9200219213 /* ServiceBots */ = {
+			isa = PBXGroup;
+			children = (
+				BFE2F1F31F16ADF800219213 /* WeatherService */,
+				BFE2F1EF1F16ACB200219213 /* BotFactory.swift */,
+				BFE2F1F11F16AD8A00219213 /* ServiceBot.swift */,
+				BF0F5AA41F1D49A0006AE56C /* ServiceObject.swift */,
+			);
+			name = ServiceBots;
+			path = Sources/ServiceBots;
+			sourceTree = "<group>";
+		};
+		BFE2F1F31F16ADF800219213 /* WeatherService */ = {
+			isa = PBXGroup;
+			children = (
+				BFE2F1F41F16AE1500219213 /* WeatherBot.swift */,
+				BFE2F1F61F16AE5E00219213 /* WeatherObject.swift */,
+			);
+			path = WeatherService;
+			sourceTree = "<group>";
+		};
+		Dependencies_ /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				"_______Group_SlackKit" /* SlackKit */,
+				"_______Group_SKClient" /* SKClient */,
+				"_______Group_SKServer" /* SKServer */,
+				"_______Group_SKRTMAPI" /* SKRTMAPI */,
+				"_______Group_Swifter" /* Swifter */,
+				"_______Group_SKWebAPI" /* SKWebAPI */,
+				"_______Group_SKCore" /* SKCore */,
+				"_______Group_Starscream" /* Starscream */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		"___RootGroup_" = {
+			isa = PBXGroup;
+			children = (
+				__PBXFileRef_Package.swift /* Package.swift */,
+				"_____Configs_" /* Configs */,
+				"_____Sources_" /* Sources */,
+				Dependencies_ /* Dependencies */,
+				"____Products_" /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		"____Products_" /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				"_____Product_SKCore" /* SKCore.framework */,
+				"_____Product_SKClient" /* SKClient.framework */,
+				"_____Product_SKWebAPI" /* SKWebAPI.framework */,
+				"_____Product_Starscream" /* Starscream.framework */,
+				"_____Product_SKRTMAPI" /* SKRTMAPI.framework */,
+				"_____Product_Swifter" /* Swifter.framework */,
+				"_____Product_SKServer" /* SKServer.framework */,
+				"_____Product_SlackKit" /* SlackKit.framework */,
+				"_____Product_AssistantBot" /* AssistantBot */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		"_____Configs_" /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				__PBXFileRef_AssistantBot.xcodeproj/Configs/Project.xcconfig /* AssistantBot.xcodeproj/Configs/Project.xcconfig */,
+			);
+			name = Configs;
+			sourceTree = "<group>";
+		};
+		"_____Sources_" /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				BF0F5A9F1F19432E006AE56C /* Helpers */,
+				BF265F931F17FAB200418B66 /* Extensions */,
+				BFE2F1EE1F16AC9200219213 /* ServiceBots */,
+				BFE2F1EB1F16AAC800219213 /* Constants */,
+				"_______Group_AssistantBot" /* AssistantBot */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		"_______Group_AssistantBot" /* AssistantBot */ = {
+			isa = PBXGroup;
+			children = (
+				__PBXFileRef_Sources/main.swift /* main.swift */,
+				BFE2F1F81F16AF4900219213 /* AssisitantBot.swift */,
+				__PBXFileRef_Tests /* Tests */,
+			);
+			name = AssistantBot;
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		"_______Group_SKClient" /* SKClient */ = {
+			isa = PBXGroup;
+			children = (
+				"__PBXFileRef_Packages/SKClient-4.0.0/Sources/Client.swift" /* Client.swift */,
+			);
+			name = SKClient;
+			path = "Packages/SKClient-4.0.0/Sources";
+			sourceTree = "<group>";
+		};
+		"_______Group_SKCore" /* SKCore */ = {
+			isa = PBXGroup;
+			children = (
+				"__PBXFileRef_Packages/SKCore-4.0.0/Sources/Action.swift" /* Action.swift */,
+				"__PBXFileRef_Packages/SKCore-4.0.0/Sources/Attachment.swift" /* Attachment.swift */,
+				"__PBXFileRef_Packages/SKCore-4.0.0/Sources/AttachmentField.swift" /* AttachmentField.swift */,
+				"__PBXFileRef_Packages/SKCore-4.0.0/Sources/Bot.swift" /* Bot.swift */,
+				"__PBXFileRef_Packages/SKCore-4.0.0/Sources/Channel.swift" /* Channel.swift */,
+				"__PBXFileRef_Packages/SKCore-4.0.0/Sources/Comment.swift" /* Comment.swift */,
+				"__PBXFileRef_Packages/SKCore-4.0.0/Sources/CustomProfile.swift" /* CustomProfile.swift */,
+				"__PBXFileRef_Packages/SKCore-4.0.0/Sources/CustomProfileField.swift" /* CustomProfileField.swift */,
+				"__PBXFileRef_Packages/SKCore-4.0.0/Sources/DoNotDisturbStatus.swift" /* DoNotDisturbStatus.swift */,
+				"__PBXFileRef_Packages/SKCore-4.0.0/Sources/Edited.swift" /* Edited.swift */,
+				"__PBXFileRef_Packages/SKCore-4.0.0/Sources/Event.swift" /* Event.swift */,
+				"__PBXFileRef_Packages/SKCore-4.0.0/Sources/Extensions.swift" /* Extensions.swift */,
+				"__PBXFileRef_Packages/SKCore-4.0.0/Sources/File.swift" /* File.swift */,
+				"__PBXFileRef_Packages/SKCore-4.0.0/Sources/History.swift" /* History.swift */,
+				"__PBXFileRef_Packages/SKCore-4.0.0/Sources/Item.swift" /* Item.swift */,
+				"__PBXFileRef_Packages/SKCore-4.0.0/Sources/Message.swift" /* Message.swift */,
+				"__PBXFileRef_Packages/SKCore-4.0.0/Sources/OAuthConfig.swift" /* OAuthConfig.swift */,
+				"__PBXFileRef_Packages/SKCore-4.0.0/Sources/Reaction.swift" /* Reaction.swift */,
+				"__PBXFileRef_Packages/SKCore-4.0.0/Sources/RTMOptions.swift" /* RTMOptions.swift */,
+				"__PBXFileRef_Packages/SKCore-4.0.0/Sources/Scope.swift" /* Scope.swift */,
+				"__PBXFileRef_Packages/SKCore-4.0.0/Sources/SlackError.swift" /* SlackError.swift */,
+				"__PBXFileRef_Packages/SKCore-4.0.0/Sources/Team.swift" /* Team.swift */,
+				"__PBXFileRef_Packages/SKCore-4.0.0/Sources/TeamIcon.swift" /* TeamIcon.swift */,
+				"__PBXFileRef_Packages/SKCore-4.0.0/Sources/Topic.swift" /* Topic.swift */,
+				"__PBXFileRef_Packages/SKCore-4.0.0/Sources/User.swift" /* User.swift */,
+				"__PBXFileRef_Packages/SKCore-4.0.0/Sources/UserGroup.swift" /* UserGroup.swift */,
+			);
+			name = SKCore;
+			path = "Packages/SKCore-4.0.0/Sources";
+			sourceTree = "<group>";
+		};
+		"_______Group_SKRTMAPI" /* SKRTMAPI */ = {
+			isa = PBXGroup;
+			children = (
+				"__PBXFileRef_Packages/SKRTMAPI-4.0.0/Sources/SKRTMAPI/SKRTMAPI.swift" /* SKRTMAPI.swift */,
+				"__PBXFileRef_Packages/SKRTMAPI-4.0.0/Sources/SKRTMAPI/Conformers/StarscreamRTM.swift" /* Conformers/StarscreamRTM.swift */,
+				"__PBXFileRef_Packages/SKRTMAPI-4.0.0/Sources/SKRTMAPI/Conformers/ZewoRTM.swift" /* Conformers/ZewoRTM.swift */,
+			);
+			name = SKRTMAPI;
+			path = "Packages/SKRTMAPI-4.0.0/Sources/SKRTMAPI";
+			sourceTree = "<group>";
+		};
+		"_______Group_SKServer" /* SKServer */ = {
+			isa = PBXGroup;
+			children = (
+				"__PBXFileRef_Packages/SKServer-4.0.0/Sources/SKServer/SKServer.swift" /* SKServer.swift */,
+				"__PBXFileRef_Packages/SKServer-4.0.0/Sources/SKServer/SlackKitResponder.swift" /* SlackKitResponder.swift */,
+				"__PBXFileRef_Packages/SKServer-4.0.0/Sources/SKServer/Conformers/SwifterServer.swift" /* Conformers/SwifterServer.swift */,
+				"__PBXFileRef_Packages/SKServer-4.0.0/Sources/SKServer/Middleware/MessageActionMiddleware.swift" /* Middleware/MessageActionMiddleware.swift */,
+				"__PBXFileRef_Packages/SKServer-4.0.0/Sources/SKServer/Middleware/OAuthMiddleware.swift" /* Middleware/OAuthMiddleware.swift */,
+				"__PBXFileRef_Packages/SKServer-4.0.0/Sources/SKServer/Middleware/RedirectMiddleware.swift" /* Middleware/RedirectMiddleware.swift */,
+				"__PBXFileRef_Packages/SKServer-4.0.0/Sources/SKServer/Middleware/ResponseMiddleware.swift" /* Middleware/ResponseMiddleware.swift */,
+				"__PBXFileRef_Packages/SKServer-4.0.0/Sources/SKServer/Model/AuthorizeResponse.swift" /* Model/AuthorizeResponse.swift */,
+				"__PBXFileRef_Packages/SKServer-4.0.0/Sources/SKServer/Model/IncomingWebhook.swift" /* Model/IncomingWebhook.swift */,
+				"__PBXFileRef_Packages/SKServer-4.0.0/Sources/SKServer/Model/MessageActionRequest.swift" /* Model/MessageActionRequest.swift */,
+				"__PBXFileRef_Packages/SKServer-4.0.0/Sources/SKServer/Model/MessageActionRoute.swift" /* Model/MessageActionRoute.swift */,
+				"__PBXFileRef_Packages/SKServer-4.0.0/Sources/SKServer/Model/OAuthResponse.swift" /* Model/OAuthResponse.swift */,
+				"__PBXFileRef_Packages/SKServer-4.0.0/Sources/SKServer/Model/RequestRoute.swift" /* Model/RequestRoute.swift */,
+				"__PBXFileRef_Packages/SKServer-4.0.0/Sources/SKServer/Model/SKResponse.swift" /* Model/SKResponse.swift */,
+				"__PBXFileRef_Packages/SKServer-4.0.0/Sources/SKServer/Model/WebhookRequest.swift" /* Model/WebhookRequest.swift */,
+				"__PBXFileRef_Packages/SKServer-4.0.0/Sources/SKServer/Titan/TitanCore.swift" /* Titan/TitanCore.swift */,
+				"__PBXFileRef_Packages/SKServer-4.0.0/Sources/SKServer/Titan/TitanCORS.swift" /* Titan/TitanCORS.swift */,
+				"__PBXFileRef_Packages/SKServer-4.0.0/Sources/SKServer/Titan/TitanErrorHandling.swift" /* Titan/TitanErrorHandling.swift */,
+				"__PBXFileRef_Packages/SKServer-4.0.0/Sources/SKServer/Titan/TitanFormURLEncodedBodyParser.swift" /* Titan/TitanFormURLEncodedBodyParser.swift */,
+				"__PBXFileRef_Packages/SKServer-4.0.0/Sources/SKServer/Titan/TitanJSONRequestBody.swift" /* Titan/TitanJSONRequestBody.swift */,
+				"__PBXFileRef_Packages/SKServer-4.0.0/Sources/SKServer/Titan/TitanQueryString.swift" /* Titan/TitanQueryString.swift */,
+				"__PBXFileRef_Packages/SKServer-4.0.0/Sources/SKServer/Titan/Router/InitializerOverloads.swift" /* Titan/Router/InitializerOverloads.swift */,
+				"__PBXFileRef_Packages/SKServer-4.0.0/Sources/SKServer/Titan/Router/PathParameterSupport.swift" /* Titan/Router/PathParameterSupport.swift */,
+				"__PBXFileRef_Packages/SKServer-4.0.0/Sources/SKServer/Titan/Router/TitanInstanceMethodsNoLabels.generated.swift" /* Titan/Router/TitanInstanceMethodsNoLabels.generated.swift */,
+				"__PBXFileRef_Packages/SKServer-4.0.0/Sources/SKServer/Titan/Router/TitanInstanceRoutesByMethod.generated.swift" /* Titan/Router/TitanInstanceRoutesByMethod.generated.swift */,
+				"__PBXFileRef_Packages/SKServer-4.0.0/Sources/SKServer/Titan/Router/TitanParameterizedRoutes.generated.swift" /* Titan/Router/TitanParameterizedRoutes.generated.swift */,
+				"__PBXFileRef_Packages/SKServer-4.0.0/Sources/SKServer/Titan/Router/TitanRoutingExtension.swift" /* Titan/Router/TitanRoutingExtension.swift */,
+			);
+			name = SKServer;
+			path = "Packages/SKServer-4.0.0/Sources/SKServer";
+			sourceTree = "<group>";
+		};
+		"_______Group_SKWebAPI" /* SKWebAPI */ = {
+			isa = PBXGroup;
+			children = (
+				"__PBXFileRef_Packages/SKWebAPI-4.0.0/Sources/NetworkInterface.swift" /* NetworkInterface.swift */,
+				"__PBXFileRef_Packages/SKWebAPI-4.0.0/Sources/WebAPI.swift" /* WebAPI.swift */,
+			);
+			name = SKWebAPI;
+			path = "Packages/SKWebAPI-4.0.0/Sources";
+			sourceTree = "<group>";
+		};
+		"_______Group_SlackKit" /* SlackKit */ = {
+			isa = PBXGroup;
+			children = (
+				"__PBXFileRef_Packages/SlackKit-4.0.0/Sources/SlackKit.swift" /* SlackKit.swift */,
+			);
+			name = SlackKit;
+			path = "Packages/SlackKit-4.0.0/Sources";
+			sourceTree = "<group>";
+		};
+		"_______Group_Starscream" /* Starscream */ = {
+			isa = PBXGroup;
+			children = (
+				"__PBXFileRef_Packages/Starscream-2.1.0/Source/Compression.swift" /* Compression.swift */,
+				"__PBXFileRef_Packages/Starscream-2.1.0/Source/SSLSecurity.swift" /* SSLSecurity.swift */,
+				"__PBXFileRef_Packages/Starscream-2.1.0/Source/WebSocket.swift" /* WebSocket.swift */,
+			);
+			name = Starscream;
+			path = "Packages/Starscream-2.1.0/Source";
+			sourceTree = "<group>";
+		};
+		"_______Group_Swifter" /* Swifter */ = {
+			isa = PBXGroup;
+			children = (
+				"__PBXFileRef_Packages/Swifter-1.3.3/Sources/DemoServer.swift" /* DemoServer.swift */,
+				"__PBXFileRef_Packages/Swifter-1.3.3/Sources/Errno.swift" /* Errno.swift */,
+				"__PBXFileRef_Packages/Swifter-1.3.3/Sources/Files.swift" /* Files.swift */,
+				"__PBXFileRef_Packages/Swifter-1.3.3/Sources/HttpParser.swift" /* HttpParser.swift */,
+				"__PBXFileRef_Packages/Swifter-1.3.3/Sources/HttpRequest.swift" /* HttpRequest.swift */,
+				"__PBXFileRef_Packages/Swifter-1.3.3/Sources/HttpResponse.swift" /* HttpResponse.swift */,
+				"__PBXFileRef_Packages/Swifter-1.3.3/Sources/HttpRouter.swift" /* HttpRouter.swift */,
+				"__PBXFileRef_Packages/Swifter-1.3.3/Sources/HttpServer.swift" /* HttpServer.swift */,
+				"__PBXFileRef_Packages/Swifter-1.3.3/Sources/HttpServerIO.swift" /* HttpServerIO.swift */,
+				"__PBXFileRef_Packages/Swifter-1.3.3/Sources/Process.swift" /* Process.swift */,
+				"__PBXFileRef_Packages/Swifter-1.3.3/Sources/Scopes.swift" /* Scopes.swift */,
+				"__PBXFileRef_Packages/Swifter-1.3.3/Sources/Socket+File.swift" /* Socket+File.swift */,
+				"__PBXFileRef_Packages/Swifter-1.3.3/Sources/Socket+Server.swift" /* Socket+Server.swift */,
+				"__PBXFileRef_Packages/Swifter-1.3.3/Sources/Socket.swift" /* Socket.swift */,
+				"__PBXFileRef_Packages/Swifter-1.3.3/Sources/String+BASE64.swift" /* String+BASE64.swift */,
+				"__PBXFileRef_Packages/Swifter-1.3.3/Sources/String+File.swift" /* String+File.swift */,
+				"__PBXFileRef_Packages/Swifter-1.3.3/Sources/String+Misc.swift" /* String+Misc.swift */,
+				"__PBXFileRef_Packages/Swifter-1.3.3/Sources/String+SHA1.swift" /* String+SHA1.swift */,
+				"__PBXFileRef_Packages/Swifter-1.3.3/Sources/WebSockets.swift" /* WebSockets.swift */,
+			);
+			name = Swifter;
+			path = "Packages/Swifter-1.3.3/Sources";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		"______Target_AssistantBot" /* AssistantBot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = "_______Confs_AssistantBot" /* Build configuration list for PBXNativeTarget "AssistantBot" */;
+			buildPhases = (
+				CompilePhase_AssistantBot /* Sources */,
+				"___LinkPhase_AssistantBot" /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				__Dependency_SKCore /* PBXTargetDependency */,
+				__Dependency_SKClient /* PBXTargetDependency */,
+				__Dependency_SKWebAPI /* PBXTargetDependency */,
+				__Dependency_Starscream /* PBXTargetDependency */,
+				__Dependency_SKRTMAPI /* PBXTargetDependency */,
+				__Dependency_Swifter /* PBXTargetDependency */,
+				__Dependency_SKServer /* PBXTargetDependency */,
+				__Dependency_SlackKit /* PBXTargetDependency */,
+			);
+			name = AssistantBot;
+			productName = AssistantBot;
+			productReference = "_____Product_AssistantBot" /* AssistantBot */;
+			productType = "com.apple.product-type.tool";
+		};
+		"______Target_SKClient" /* SKClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = "_______Confs_SKClient" /* Build configuration list for PBXNativeTarget "SKClient" */;
+			buildPhases = (
+				CompilePhase_SKClient /* Sources */,
+				"___LinkPhase_SKClient" /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				__Dependency_SKCore /* PBXTargetDependency */,
+			);
+			name = SKClient;
+			productName = SKClient;
+			productReference = "_____Product_SKClient" /* SKClient.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"______Target_SKCore" /* SKCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = "_______Confs_SKCore" /* Build configuration list for PBXNativeTarget "SKCore" */;
+			buildPhases = (
+				CompilePhase_SKCore /* Sources */,
+				"___LinkPhase_SKCore" /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SKCore;
+			productName = SKCore;
+			productReference = "_____Product_SKCore" /* SKCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"______Target_SKRTMAPI" /* SKRTMAPI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = "_______Confs_SKRTMAPI" /* Build configuration list for PBXNativeTarget "SKRTMAPI" */;
+			buildPhases = (
+				CompilePhase_SKRTMAPI /* Sources */,
+				"___LinkPhase_SKRTMAPI" /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				__Dependency_SKCore /* PBXTargetDependency */,
+				__Dependency_SKWebAPI /* PBXTargetDependency */,
+				__Dependency_Starscream /* PBXTargetDependency */,
+			);
+			name = SKRTMAPI;
+			productName = SKRTMAPI;
+			productReference = "_____Product_SKRTMAPI" /* SKRTMAPI.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"______Target_SKServer" /* SKServer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = "_______Confs_SKServer" /* Build configuration list for PBXNativeTarget "SKServer" */;
+			buildPhases = (
+				CompilePhase_SKServer /* Sources */,
+				"___LinkPhase_SKServer" /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				__Dependency_SKCore /* PBXTargetDependency */,
+				__Dependency_SKWebAPI /* PBXTargetDependency */,
+				__Dependency_Swifter /* PBXTargetDependency */,
+			);
+			name = SKServer;
+			productName = SKServer;
+			productReference = "_____Product_SKServer" /* SKServer.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"______Target_SKWebAPI" /* SKWebAPI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = "_______Confs_SKWebAPI" /* Build configuration list for PBXNativeTarget "SKWebAPI" */;
+			buildPhases = (
+				CompilePhase_SKWebAPI /* Sources */,
+				"___LinkPhase_SKWebAPI" /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				__Dependency_SKCore /* PBXTargetDependency */,
+			);
+			name = SKWebAPI;
+			productName = SKWebAPI;
+			productReference = "_____Product_SKWebAPI" /* SKWebAPI.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"______Target_SlackKit" /* SlackKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = "_______Confs_SlackKit" /* Build configuration list for PBXNativeTarget "SlackKit" */;
+			buildPhases = (
+				CompilePhase_SlackKit /* Sources */,
+				"___LinkPhase_SlackKit" /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				__Dependency_SKCore /* PBXTargetDependency */,
+				__Dependency_SKClient /* PBXTargetDependency */,
+				__Dependency_SKWebAPI /* PBXTargetDependency */,
+				__Dependency_Starscream /* PBXTargetDependency */,
+				__Dependency_SKRTMAPI /* PBXTargetDependency */,
+				__Dependency_Swifter /* PBXTargetDependency */,
+				__Dependency_SKServer /* PBXTargetDependency */,
+			);
+			name = SlackKit;
+			productName = SlackKit;
+			productReference = "_____Product_SlackKit" /* SlackKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"______Target_Starscream" /* Starscream */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = "_______Confs_Starscream" /* Build configuration list for PBXNativeTarget "Starscream" */;
+			buildPhases = (
+				CompilePhase_Starscream /* Sources */,
+				"___LinkPhase_Starscream" /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Starscream;
+			productName = Starscream;
+			productReference = "_____Product_Starscream" /* Starscream.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"______Target_Swifter" /* Swifter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = "_______Confs_Swifter" /* Build configuration list for PBXNativeTarget "Swifter" */;
+			buildPhases = (
+				CompilePhase_Swifter /* Sources */,
+				"___LinkPhase_Swifter" /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Swifter;
+			productName = Swifter;
+			productReference = "_____Product_Swifter" /* Swifter.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		__RootObject_ /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 9999;
+			};
+			buildConfigurationList = "___RootConfs_" /* Build configuration list for PBXProject "AssistantBot" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = "___RootGroup_";
+			productRefGroup = "____Products_" /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				"______Target_SKCore" /* SKCore */,
+				"______Target_SKClient" /* SKClient */,
+				"______Target_SKWebAPI" /* SKWebAPI */,
+				"______Target_Starscream" /* Starscream */,
+				"______Target_SKRTMAPI" /* SKRTMAPI */,
+				"______Target_Swifter" /* Swifter */,
+				"______Target_SKServer" /* SKServer */,
+				"______Target_SlackKit" /* SlackKit */,
+				"______Target_AssistantBot" /* AssistantBot */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CompilePhase_AssistantBot /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				BFE2F1ED1F16AADF00219213 /* APIKeys.swift in Sources */,
+				BFE2F1F21F16AD8A00219213 /* ServiceBot.swift in Sources */,
+				BF265F991F17FCE100418B66 /* Command.swift in Sources */,
+				BFE2F1F01F16ACB200219213 /* BotFactory.swift in Sources */,
+				BF10AA051F2384DB0086BB3A /* StringFormatter.swift in Sources */,
+				__src_cc_ref_Sources/main.swift /* main.swift in Sources */,
+				BFE2F1F91F16AF4900219213 /* AssisitantBot.swift in Sources */,
+				BFE2F1F51F16AE1500219213 /* WeatherBot.swift in Sources */,
+				BF10AA021F23830B0086BB3A /* ValuesConverter.swift in Sources */,
+				BFE2F1F71F16AE5E00219213 /* WeatherObject.swift in Sources */,
+				BF0F5AA51F1D49A0006AE56C /* ServiceObject.swift in Sources */,
+				BF265F951F17FB0200418B66 /* NSObject+Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CompilePhase_SKClient /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				"__src_cc_ref_Packages/SKClient-4.0.0/Sources/Client.swift" /* Client.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CompilePhase_SKCore /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				"__src_cc_ref_Packages/SKCore-4.0.0/Sources/Action.swift" /* Action.swift in Sources */,
+				"__src_cc_ref_Packages/SKCore-4.0.0/Sources/Attachment.swift" /* Attachment.swift in Sources */,
+				"__src_cc_ref_Packages/SKCore-4.0.0/Sources/AttachmentField.swift" /* AttachmentField.swift in Sources */,
+				"__src_cc_ref_Packages/SKCore-4.0.0/Sources/Bot.swift" /* Bot.swift in Sources */,
+				"__src_cc_ref_Packages/SKCore-4.0.0/Sources/Channel.swift" /* Channel.swift in Sources */,
+				BF10AA011F23830B0086BB3A /* ValuesConverter.swift in Sources */,
+				"__src_cc_ref_Packages/SKCore-4.0.0/Sources/Comment.swift" /* Comment.swift in Sources */,
+				"__src_cc_ref_Packages/SKCore-4.0.0/Sources/CustomProfile.swift" /* CustomProfile.swift in Sources */,
+				"__src_cc_ref_Packages/SKCore-4.0.0/Sources/CustomProfileField.swift" /* CustomProfileField.swift in Sources */,
+				"__src_cc_ref_Packages/SKCore-4.0.0/Sources/DoNotDisturbStatus.swift" /* DoNotDisturbStatus.swift in Sources */,
+				"__src_cc_ref_Packages/SKCore-4.0.0/Sources/Edited.swift" /* Edited.swift in Sources */,
+				"__src_cc_ref_Packages/SKCore-4.0.0/Sources/Event.swift" /* Event.swift in Sources */,
+				"__src_cc_ref_Packages/SKCore-4.0.0/Sources/Extensions.swift" /* Extensions.swift in Sources */,
+				"__src_cc_ref_Packages/SKCore-4.0.0/Sources/File.swift" /* File.swift in Sources */,
+				"__src_cc_ref_Packages/SKCore-4.0.0/Sources/History.swift" /* History.swift in Sources */,
+				BF10AA041F2384DB0086BB3A /* StringFormatter.swift in Sources */,
+				"__src_cc_ref_Packages/SKCore-4.0.0/Sources/Item.swift" /* Item.swift in Sources */,
+				"__src_cc_ref_Packages/SKCore-4.0.0/Sources/Message.swift" /* Message.swift in Sources */,
+				"__src_cc_ref_Packages/SKCore-4.0.0/Sources/OAuthConfig.swift" /* OAuthConfig.swift in Sources */,
+				"__src_cc_ref_Packages/SKCore-4.0.0/Sources/Reaction.swift" /* Reaction.swift in Sources */,
+				"__src_cc_ref_Packages/SKCore-4.0.0/Sources/RTMOptions.swift" /* RTMOptions.swift in Sources */,
+				"__src_cc_ref_Packages/SKCore-4.0.0/Sources/Scope.swift" /* Scope.swift in Sources */,
+				"__src_cc_ref_Packages/SKCore-4.0.0/Sources/SlackError.swift" /* SlackError.swift in Sources */,
+				"__src_cc_ref_Packages/SKCore-4.0.0/Sources/Team.swift" /* Team.swift in Sources */,
+				"__src_cc_ref_Packages/SKCore-4.0.0/Sources/TeamIcon.swift" /* TeamIcon.swift in Sources */,
+				"__src_cc_ref_Packages/SKCore-4.0.0/Sources/Topic.swift" /* Topic.swift in Sources */,
+				"__src_cc_ref_Packages/SKCore-4.0.0/Sources/User.swift" /* User.swift in Sources */,
+				"__src_cc_ref_Packages/SKCore-4.0.0/Sources/UserGroup.swift" /* UserGroup.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CompilePhase_SKRTMAPI /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				"__src_cc_ref_Packages/SKRTMAPI-4.0.0/Sources/SKRTMAPI/SKRTMAPI.swift" /* SKRTMAPI.swift in Sources */,
+				"__src_cc_ref_Packages/SKRTMAPI-4.0.0/Sources/SKRTMAPI/Conformers/StarscreamRTM.swift" /* Conformers/StarscreamRTM.swift in Sources */,
+				"__src_cc_ref_Packages/SKRTMAPI-4.0.0/Sources/SKRTMAPI/Conformers/ZewoRTM.swift" /* Conformers/ZewoRTM.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CompilePhase_SKServer /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				"__src_cc_ref_Packages/SKServer-4.0.0/Sources/SKServer/SKServer.swift" /* SKServer.swift in Sources */,
+				"__src_cc_ref_Packages/SKServer-4.0.0/Sources/SKServer/SlackKitResponder.swift" /* SlackKitResponder.swift in Sources */,
+				"__src_cc_ref_Packages/SKServer-4.0.0/Sources/SKServer/Conformers/SwifterServer.swift" /* Conformers/SwifterServer.swift in Sources */,
+				"__src_cc_ref_Packages/SKServer-4.0.0/Sources/SKServer/Middleware/MessageActionMiddleware.swift" /* Middleware/MessageActionMiddleware.swift in Sources */,
+				"__src_cc_ref_Packages/SKServer-4.0.0/Sources/SKServer/Middleware/OAuthMiddleware.swift" /* Middleware/OAuthMiddleware.swift in Sources */,
+				"__src_cc_ref_Packages/SKServer-4.0.0/Sources/SKServer/Middleware/RedirectMiddleware.swift" /* Middleware/RedirectMiddleware.swift in Sources */,
+				"__src_cc_ref_Packages/SKServer-4.0.0/Sources/SKServer/Middleware/ResponseMiddleware.swift" /* Middleware/ResponseMiddleware.swift in Sources */,
+				"__src_cc_ref_Packages/SKServer-4.0.0/Sources/SKServer/Model/AuthorizeResponse.swift" /* Model/AuthorizeResponse.swift in Sources */,
+				"__src_cc_ref_Packages/SKServer-4.0.0/Sources/SKServer/Model/IncomingWebhook.swift" /* Model/IncomingWebhook.swift in Sources */,
+				"__src_cc_ref_Packages/SKServer-4.0.0/Sources/SKServer/Model/MessageActionRequest.swift" /* Model/MessageActionRequest.swift in Sources */,
+				"__src_cc_ref_Packages/SKServer-4.0.0/Sources/SKServer/Model/MessageActionRoute.swift" /* Model/MessageActionRoute.swift in Sources */,
+				"__src_cc_ref_Packages/SKServer-4.0.0/Sources/SKServer/Model/OAuthResponse.swift" /* Model/OAuthResponse.swift in Sources */,
+				"__src_cc_ref_Packages/SKServer-4.0.0/Sources/SKServer/Model/RequestRoute.swift" /* Model/RequestRoute.swift in Sources */,
+				"__src_cc_ref_Packages/SKServer-4.0.0/Sources/SKServer/Model/SKResponse.swift" /* Model/SKResponse.swift in Sources */,
+				"__src_cc_ref_Packages/SKServer-4.0.0/Sources/SKServer/Model/WebhookRequest.swift" /* Model/WebhookRequest.swift in Sources */,
+				"__src_cc_ref_Packages/SKServer-4.0.0/Sources/SKServer/Titan/TitanCore.swift" /* Titan/TitanCore.swift in Sources */,
+				"__src_cc_ref_Packages/SKServer-4.0.0/Sources/SKServer/Titan/TitanCORS.swift" /* Titan/TitanCORS.swift in Sources */,
+				"__src_cc_ref_Packages/SKServer-4.0.0/Sources/SKServer/Titan/TitanErrorHandling.swift" /* Titan/TitanErrorHandling.swift in Sources */,
+				"__src_cc_ref_Packages/SKServer-4.0.0/Sources/SKServer/Titan/TitanFormURLEncodedBodyParser.swift" /* Titan/TitanFormURLEncodedBodyParser.swift in Sources */,
+				"__src_cc_ref_Packages/SKServer-4.0.0/Sources/SKServer/Titan/TitanJSONRequestBody.swift" /* Titan/TitanJSONRequestBody.swift in Sources */,
+				"__src_cc_ref_Packages/SKServer-4.0.0/Sources/SKServer/Titan/TitanQueryString.swift" /* Titan/TitanQueryString.swift in Sources */,
+				"__src_cc_ref_Packages/SKServer-4.0.0/Sources/SKServer/Titan/Router/InitializerOverloads.swift" /* Titan/Router/InitializerOverloads.swift in Sources */,
+				"__src_cc_ref_Packages/SKServer-4.0.0/Sources/SKServer/Titan/Router/PathParameterSupport.swift" /* Titan/Router/PathParameterSupport.swift in Sources */,
+				"__src_cc_ref_Packages/SKServer-4.0.0/Sources/SKServer/Titan/Router/TitanInstanceMethodsNoLabels.generated.swift" /* Titan/Router/TitanInstanceMethodsNoLabels.generated.swift in Sources */,
+				"__src_cc_ref_Packages/SKServer-4.0.0/Sources/SKServer/Titan/Router/TitanInstanceRoutesByMethod.generated.swift" /* Titan/Router/TitanInstanceRoutesByMethod.generated.swift in Sources */,
+				"__src_cc_ref_Packages/SKServer-4.0.0/Sources/SKServer/Titan/Router/TitanParameterizedRoutes.generated.swift" /* Titan/Router/TitanParameterizedRoutes.generated.swift in Sources */,
+				"__src_cc_ref_Packages/SKServer-4.0.0/Sources/SKServer/Titan/Router/TitanRoutingExtension.swift" /* Titan/Router/TitanRoutingExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CompilePhase_SKWebAPI /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				"__src_cc_ref_Packages/SKWebAPI-4.0.0/Sources/NetworkInterface.swift" /* NetworkInterface.swift in Sources */,
+				"__src_cc_ref_Packages/SKWebAPI-4.0.0/Sources/WebAPI.swift" /* WebAPI.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CompilePhase_SlackKit /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				"__src_cc_ref_Packages/SlackKit-4.0.0/Sources/SlackKit.swift" /* SlackKit.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CompilePhase_Starscream /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				"__src_cc_ref_Packages/Starscream-2.1.0/Source/Compression.swift" /* Compression.swift in Sources */,
+				"__src_cc_ref_Packages/Starscream-2.1.0/Source/SSLSecurity.swift" /* SSLSecurity.swift in Sources */,
+				"__src_cc_ref_Packages/Starscream-2.1.0/Source/WebSocket.swift" /* WebSocket.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CompilePhase_Swifter /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				"__src_cc_ref_Packages/Swifter-1.3.3/Sources/DemoServer.swift" /* DemoServer.swift in Sources */,
+				"__src_cc_ref_Packages/Swifter-1.3.3/Sources/Errno.swift" /* Errno.swift in Sources */,
+				"__src_cc_ref_Packages/Swifter-1.3.3/Sources/Files.swift" /* Files.swift in Sources */,
+				"__src_cc_ref_Packages/Swifter-1.3.3/Sources/HttpParser.swift" /* HttpParser.swift in Sources */,
+				"__src_cc_ref_Packages/Swifter-1.3.3/Sources/HttpRequest.swift" /* HttpRequest.swift in Sources */,
+				"__src_cc_ref_Packages/Swifter-1.3.3/Sources/HttpResponse.swift" /* HttpResponse.swift in Sources */,
+				"__src_cc_ref_Packages/Swifter-1.3.3/Sources/HttpRouter.swift" /* HttpRouter.swift in Sources */,
+				"__src_cc_ref_Packages/Swifter-1.3.3/Sources/HttpServer.swift" /* HttpServer.swift in Sources */,
+				"__src_cc_ref_Packages/Swifter-1.3.3/Sources/HttpServerIO.swift" /* HttpServerIO.swift in Sources */,
+				"__src_cc_ref_Packages/Swifter-1.3.3/Sources/Process.swift" /* Process.swift in Sources */,
+				"__src_cc_ref_Packages/Swifter-1.3.3/Sources/Scopes.swift" /* Scopes.swift in Sources */,
+				"__src_cc_ref_Packages/Swifter-1.3.3/Sources/Socket+File.swift" /* Socket+File.swift in Sources */,
+				"__src_cc_ref_Packages/Swifter-1.3.3/Sources/Socket+Server.swift" /* Socket+Server.swift in Sources */,
+				"__src_cc_ref_Packages/Swifter-1.3.3/Sources/Socket.swift" /* Socket.swift in Sources */,
+				"__src_cc_ref_Packages/Swifter-1.3.3/Sources/String+BASE64.swift" /* String+BASE64.swift in Sources */,
+				"__src_cc_ref_Packages/Swifter-1.3.3/Sources/String+File.swift" /* String+File.swift in Sources */,
+				"__src_cc_ref_Packages/Swifter-1.3.3/Sources/String+Misc.swift" /* String+Misc.swift in Sources */,
+				"__src_cc_ref_Packages/Swifter-1.3.3/Sources/String+SHA1.swift" /* String+SHA1.swift in Sources */,
+				"__src_cc_ref_Packages/Swifter-1.3.3/Sources/WebSockets.swift" /* WebSockets.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		__Dependency_SKClient /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "______Target_SKClient" /* SKClient */;
+			targetProxy = BFE2F1E71F16A9F700219213 /* PBXContainerItemProxy */;
+		};
+		__Dependency_SKCore /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "______Target_SKCore" /* SKCore */;
+			targetProxy = BFE2F1E31F16A9F700219213 /* PBXContainerItemProxy */;
+		};
+		__Dependency_SKRTMAPI /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "______Target_SKRTMAPI" /* SKRTMAPI */;
+			targetProxy = BFE2F1E81F16A9F700219213 /* PBXContainerItemProxy */;
+		};
+		__Dependency_SKServer /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "______Target_SKServer" /* SKServer */;
+			targetProxy = BFE2F1E91F16A9F700219213 /* PBXContainerItemProxy */;
+		};
+		__Dependency_SKWebAPI /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "______Target_SKWebAPI" /* SKWebAPI */;
+			targetProxy = BFE2F1E41F16A9F700219213 /* PBXContainerItemProxy */;
+		};
+		__Dependency_SlackKit /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "______Target_SlackKit" /* SlackKit */;
+			targetProxy = BFE2F1EA1F16A9F700219213 /* PBXContainerItemProxy */;
+		};
+		__Dependency_Starscream /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "______Target_Starscream" /* Starscream */;
+			targetProxy = BFE2F1E51F16A9F700219213 /* PBXContainerItemProxy */;
+		};
+		__Dependency_Swifter /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "______Target_Swifter" /* Swifter */;
+			targetProxy = BFE2F1E61F16A9F700219213 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		_ReleaseConf_AssistantBot /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				HEADER_SEARCH_PATHS = (
+					"/Users/edo_girl/Documents/swiftbots/AssistantBot/Packages/CZLib-1.0.0",
+					"/Users/edo_girl/Documents/swiftbots/AssistantBot/Packages/CommonCrypto-0.1.4",
+				);
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_FORCE_DYNAMIC_LINK_STDLIB = YES;
+				SWIFT_FORCE_STATIC_LINK_STDLIB = NO;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		_ReleaseConf_SKClient /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				INFOPLIST_FILE = AssistantBot.xcodeproj/SKClient_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = SKClient;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		_ReleaseConf_SKCore /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				INFOPLIST_FILE = AssistantBot.xcodeproj/SKCore_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = SKCore;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		_ReleaseConf_SKRTMAPI /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				HEADER_SEARCH_PATHS = (
+					"/Users/edo_girl/Documents/swiftbots/AssistantBot/Packages/CZLib-1.0.0",
+					"/Users/edo_girl/Documents/swiftbots/AssistantBot/Packages/CommonCrypto-0.1.4",
+				);
+				INFOPLIST_FILE = AssistantBot.xcodeproj/SKRTMAPI_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = SKRTMAPI;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		_ReleaseConf_SKServer /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				INFOPLIST_FILE = AssistantBot.xcodeproj/SKServer_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = SKServer;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		_ReleaseConf_SKWebAPI /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				INFOPLIST_FILE = AssistantBot.xcodeproj/SKWebAPI_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = SKWebAPI;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		_ReleaseConf_SlackKit /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				HEADER_SEARCH_PATHS = (
+					"/Users/edo_girl/Documents/swiftbots/AssistantBot/Packages/CZLib-1.0.0",
+					"/Users/edo_girl/Documents/swiftbots/AssistantBot/Packages/CommonCrypto-0.1.4",
+				);
+				INFOPLIST_FILE = AssistantBot.xcodeproj/SlackKit_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = SlackKit;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		_ReleaseConf_Starscream /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				HEADER_SEARCH_PATHS = (
+					"/Users/edo_girl/Documents/swiftbots/AssistantBot/Packages/CZLib-1.0.0",
+					"/Users/edo_girl/Documents/swiftbots/AssistantBot/Packages/CommonCrypto-0.1.4",
+				);
+				INFOPLIST_FILE = AssistantBot.xcodeproj/Starscream_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Starscream;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		_ReleaseConf_Swifter /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				INFOPLIST_FILE = AssistantBot.xcodeproj/Swifter_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Swifter;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		"___DebugConf_AssistantBot" /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				HEADER_SEARCH_PATHS = (
+					"/Users/edo_girl/Documents/swiftbots/AssistantBot/Packages/CZLib-1.0.0",
+					"/Users/edo_girl/Documents/swiftbots/AssistantBot/Packages/CommonCrypto-0.1.4",
+				);
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_FORCE_DYNAMIC_LINK_STDLIB = YES;
+				SWIFT_FORCE_STATIC_LINK_STDLIB = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		"___DebugConf_SKClient" /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				INFOPLIST_FILE = AssistantBot.xcodeproj/SKClient_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = SKClient;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		"___DebugConf_SKCore" /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				INFOPLIST_FILE = AssistantBot.xcodeproj/SKCore_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = SKCore;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		"___DebugConf_SKRTMAPI" /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				HEADER_SEARCH_PATHS = (
+					"/Users/edo_girl/Documents/swiftbots/AssistantBot/Packages/CZLib-1.0.0",
+					"/Users/edo_girl/Documents/swiftbots/AssistantBot/Packages/CommonCrypto-0.1.4",
+				);
+				INFOPLIST_FILE = AssistantBot.xcodeproj/SKRTMAPI_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = SKRTMAPI;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		"___DebugConf_SKServer" /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				INFOPLIST_FILE = AssistantBot.xcodeproj/SKServer_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = SKServer;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		"___DebugConf_SKWebAPI" /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				INFOPLIST_FILE = AssistantBot.xcodeproj/SKWebAPI_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = SKWebAPI;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		"___DebugConf_SlackKit" /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				HEADER_SEARCH_PATHS = (
+					"/Users/edo_girl/Documents/swiftbots/AssistantBot/Packages/CZLib-1.0.0",
+					"/Users/edo_girl/Documents/swiftbots/AssistantBot/Packages/CommonCrypto-0.1.4",
+				);
+				INFOPLIST_FILE = AssistantBot.xcodeproj/SlackKit_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = SlackKit;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		"___DebugConf_Starscream" /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				HEADER_SEARCH_PATHS = (
+					"/Users/edo_girl/Documents/swiftbots/AssistantBot/Packages/CZLib-1.0.0",
+					"/Users/edo_girl/Documents/swiftbots/AssistantBot/Packages/CommonCrypto-0.1.4",
+				);
+				INFOPLIST_FILE = AssistantBot.xcodeproj/Starscream_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Starscream;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		"___DebugConf_Swifter" /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				INFOPLIST_FILE = AssistantBot.xcodeproj/Swifter_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Swifter;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		"_____Release_" /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = __PBXFileRef_AssistantBot.xcodeproj/Configs/Project.xcconfig /* AssistantBot.xcodeproj/Configs/Project.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		"_______Debug_" /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = __PBXFileRef_AssistantBot.xcodeproj/Configs/Project.xcconfig /* AssistantBot.xcodeproj/Configs/Project.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		"___RootConfs_" /* Build configuration list for PBXProject "AssistantBot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				"_______Debug_" /* Debug */,
+				"_____Release_" /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		"_______Confs_AssistantBot" /* Build configuration list for PBXNativeTarget "AssistantBot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				"___DebugConf_AssistantBot" /* Debug */,
+				_ReleaseConf_AssistantBot /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		"_______Confs_SKClient" /* Build configuration list for PBXNativeTarget "SKClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				"___DebugConf_SKClient" /* Debug */,
+				_ReleaseConf_SKClient /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		"_______Confs_SKCore" /* Build configuration list for PBXNativeTarget "SKCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				"___DebugConf_SKCore" /* Debug */,
+				_ReleaseConf_SKCore /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		"_______Confs_SKRTMAPI" /* Build configuration list for PBXNativeTarget "SKRTMAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				"___DebugConf_SKRTMAPI" /* Debug */,
+				_ReleaseConf_SKRTMAPI /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		"_______Confs_SKServer" /* Build configuration list for PBXNativeTarget "SKServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				"___DebugConf_SKServer" /* Debug */,
+				_ReleaseConf_SKServer /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		"_______Confs_SKWebAPI" /* Build configuration list for PBXNativeTarget "SKWebAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				"___DebugConf_SKWebAPI" /* Debug */,
+				_ReleaseConf_SKWebAPI /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		"_______Confs_SlackKit" /* Build configuration list for PBXNativeTarget "SlackKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				"___DebugConf_SlackKit" /* Debug */,
+				_ReleaseConf_SlackKit /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		"_______Confs_Starscream" /* Build configuration list for PBXNativeTarget "Starscream" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				"___DebugConf_Starscream" /* Debug */,
+				_ReleaseConf_Starscream /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		"_______Confs_Swifter" /* Build configuration list for PBXNativeTarget "Swifter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				"___DebugConf_Swifter" /* Debug */,
+				_ReleaseConf_Swifter /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = __RootObject_ /* Project object */;
+}
